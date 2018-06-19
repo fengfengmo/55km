@@ -1,0 +1,109 @@
+@import "../../scss/_variable";
+
+  .inbox_card{
+    background: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.30);
+    border-radius: 4px;
+    padding-top: 40px;
+    margin-bottom: 24px;
+    // padding: 24px;
+    .inbox_card_avatar{
+      width: 176px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 20px;
+      color: #4A4A4A;
+      img{
+        width: 96px;
+        height: 96px;
+        border-radius: 96px;
+      }
+    }
+    .inbox_card_con{
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      h3{
+        font-size: 20px;
+        color: #4A4A4A;
+        line-height: 22px;
+      }
+      p{
+        padding: 12px 0;
+        flex: 1;
+        font-size: 16px;
+        color: #848484;
+        line-height: 20px;
+      }
+      .inbox_card_other{
+        border-top: 1px solid #DBDBDB;
+        height: 48px;
+        line-height: 48px;
+        .inbox_card_other_item{
+          flex: 1;
+          color: #9B9B9B;
+          font-size: 16px;
+          i{
+            padding-right: 12px;
+            font-size: 20px;
+          }
+          &:last-child{
+            flex: none;
+            width: 30px;
+          }
+          &.inbox_card_other_item_none{
+            flex: none;
+            min-width: 25%;
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+    .inbox_card_state{
+      width: 160px;
+      position: relative;
+      .inbox_card_state_type{
+        position: absolute;
+        top: -40px;
+        right:0;
+        height: 40px;
+        width: 160px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 16px;
+        color: #FFFFFF;
+        border-radius:  0 0 0 4px;
+        background: #25CB83;
+      }
+    }
+
+    .inbox_card_footer{
+      padding-left: 176px;
+      padding-right: 160px;
+    }
+  }
+
+
+  @media (max-width: $screen-mobile) {
+    .inbox_card {
+      .inbox_card_avatar{
+        width: 100px;
+        font-size: 14px;
+        img{
+          width: 68px;
+          height: 68px;
+
+        }
+      }
+      .inbox_card_state{
+        width: 0;
+      }
+      .inbox_card_con .inbox_card_other .inbox_card_other_item:last-child{
+        width: 0;
+      }
+      .inbox_card_footer{
+        padding: 0 12px;
+        overflow: hidden;
+      }
+    }
+  }

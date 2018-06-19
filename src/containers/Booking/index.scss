@@ -1,0 +1,683 @@
+@import "../../scss/_variable";
+.booking_wrap{
+  padding-bottom: 60px;
+  .booking_header{
+    padding: 40px 0;
+  }
+  .booking_main{
+
+  }
+  /**
+   * 左侧
+   */
+  .booking_main_l{
+
+    flex: 1;
+    padding: 0px 40px 24px 0;
+    .payment_body{
+      flex-direction: column;
+      justify-content: center;
+      display: none;
+      &.payment_body2{
+        display: flex;
+        padding-top: 12px;
+      }
+      .booking_r_item{
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #EDEDED;
+        font-size: 16px;
+        color: #4A4A4A;
+        line-height: 48px;
+        &.booking_r_item_small{
+          border-bottom: none;
+          line-height: 36px;
+        }
+        &:last-child{
+          border-top: 1px solid #EDEDED;
+          border-bottom: none;
+          .item_txt{
+            font-size: 20px;
+            color: #ED5564;
+          }
+        }
+        .item_label{
+          &:after{
+            content: ':';
+          }
+        }
+        .item_txt{
+          color: #848484;
+        }
+      }
+    }
+    .book_item_box{
+      display: flex;
+      flex-direction: column;
+
+      .book_item_header{
+        text-align: center;
+
+        .book_item_header_i{
+          font-size: 20px;
+        }
+        .ant-radio-inner{
+          margin-right: 10px;
+        }
+      }
+      .inquiry_wrap{
+        display: none;
+        .step_name{
+          background-color: #f6f6f6;
+          font-size: 24px;
+          color: #4A4A4A;
+          line-height: 48px;
+          height: 48px;
+          padding: 0 24px;
+          text-align: left;
+        }
+        .inquiry_body{
+            padding: 12px;
+          .book_box_item{
+            width: 50%;
+            float:left;
+            padding:12px 0 12px 6px;
+            box-sizing: border-box;
+            &:first-child{
+              padding-left: 0;
+              padding-right: 6px;
+            }
+            .book_coins_label{
+
+              padding-right: 12px;
+              line-height: 40px;
+            }
+            .book_people_select{
+              flex: 1;
+              .ant-select-selection__rendered{
+                line-height: 44px;
+              }
+            }
+          }
+        }
+        .inquiry_footer{
+          padding-top: 20px;
+          text-align: right;
+        }
+      }
+      .ant-radio-wrapper{
+        border: 1px solid #C5C6C7;
+        border-radius: 4px;
+        display: block;
+        width: 100%;
+        background-color: #fff;
+        white-space:inherit;
+        margin: 0;
+        margin-bottom: 20px;
+        .ant-radio{
+          display: none;
+        }
+        .booking_step{
+          border: 0;
+          border-radius: 0;
+        }
+      }
+      .booking_step{
+        display: none;
+      }
+      .ant-radio-wrapper-checked{
+        .booking_step,.inquiry_wrap{
+          display: block;
+
+        }
+        span.ant-radio + * {
+          padding: 0;
+        }
+        .book_item_header_i{
+          display: none;
+        }
+        .ant-radio-inner {
+          border-color: #06BEBD;
+        }
+        .ant-radio-inner:after {
+            transform: scale(1);
+            opacity: 1;
+            transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+        }
+      }
+    }
+    .booking_step{
+      border: 1px solid #C5C6C7;
+      border-radius: 4px;
+      background-color: #fff;
+
+      .step_name{
+        background-color: #f6f6f6;
+        font-size: 24px;
+        color: #4A4A4A;
+        line-height: 48px;
+        height: 48px;
+        padding: 0 24px;
+      }
+      .step_header{
+        margin: 0 24px;
+        padding: 24px 0;
+        font-size: 16px;
+        color: #848484;
+        // font-weight: 100;
+        line-height: 22px;
+        border-bottom: 1px solid #EDEDED;
+      }
+      .step_main{
+        padding: 24px;
+        &.step_main_success{
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          i{
+            font-size: 80px;
+            color: #ED5564;
+            padding: 35px 0;
+          }
+          h3{
+            width: 60%;
+            margin: 0 auto;
+            font-size: 32px;
+            color: #4A4A4A;
+            line-height: 32px;
+            padding-bottom: 32px;
+          }
+          p{
+            font-size: 16px;
+            color: #9B9B9B;
+            line-height: 20px;
+            text-align: left;
+          }
+        }
+        .payment_title{
+          padding-bottom: 16px;
+        }
+        .payment_wrap{
+          padding-bottom: 24px;
+          .ant-radio-group{
+            display: flex;
+            .ant-radio-button-wrapper{
+              flex:1;
+              height: 48px;
+              line-height: 48px;
+              text-align: center;
+              border-radius: 4px;
+              margin: 0 4px;
+              position: relative;
+              border: 1px solid #C5C6C7;
+              &:first-child {
+                margin: 0 4px 0 0;
+              }
+              &:last-child {
+                margin: 0 0 0 4px;
+              }
+              .icon_Method{
+                height: 100%;
+                width: 100%;
+                background-position: center;
+                background-size: 60%;
+                background-repeat: no-repeat;
+              }
+              .icon_Wechat{
+                background-image: url('http://7xq8kr.com1.z0.glb.clouddn.com/webapi_1485419710_j3sgi_a0ezp');
+              }
+              .icon_Alipay{
+                background-image: url('http://7xq8kr.com1.z0.glb.clouddn.com/webapi_1485419600_zr751_79um4');
+              }
+              .icon_Paypal{
+                background-image: url('http://7xq8kr.com1.z0.glb.clouddn.com/webapi_1485419676_3e7ds_yzlbs');
+              }
+              .icon{
+                display: none;
+              }
+              &.ant-radio-button-wrapper-checked{
+                .icon_Wechat{
+                  background-image: url('http://7xq8kr.com1.z0.glb.clouddn.com/webapi_1485419696_lkd1b_whmo2');
+                }
+                .icon_Alipay{
+                  background-image: url('http://7xq8kr.com1.z0.glb.clouddn.com/webapi_1485419543_2r39f_1n7e5');
+                }
+                .icon_Paypal{
+                  background-image: url('http://7xq8kr.com1.z0.glb.clouddn.com/webapi_1485419658_rurkr_uzk0m');
+                }
+              }
+            }
+            .ant-radio-button-wrapper-checked {
+              border: 1px solid #25CB83;
+              box-shadow: 0px 0px 0px 1px #25CB83 !important;
+            }
+          }
+        }
+        .payment_discount_wrap{
+          .flex_item{
+            flex: 1;
+            margin: 0 4px;
+            padding: 0;
+            &:first-child {
+              margin: 0 4px 0 0;
+            }
+            &:last-child {
+              margin: 0 0 0 4px;
+            }
+          }
+        }
+        .payment_discount_wrap_s{
+          padding: 8px 0;
+          .ant-select-selection__rendered{
+            line-height: 44px;
+          }
+          .flex_item{
+
+            padding: 0;
+            &:first-child {
+              width: 33.33%;
+              margin: 0 2px 0 0;
+            }
+            &:last-child {
+              flex: 1;
+              margin: 0 0 0 0px;
+            }
+          }
+        }
+
+        .step_main_l{
+          width: 58.33333333%;
+          min-width: 345px;
+          .rc-calendar-date{
+            background: #FBFBFB;
+          }
+          .rc-calendar-selected-date .rc-calendar-date,.rc-calendar-selected-day .rc-calendar-date {
+              background: #B7CE63;
+              color: #fff;
+              &:hover {
+                  background: #B7CE63;
+                  color: #fff;
+              }
+          }
+          .rc-calendar-today .rc-calendar-date {
+              border: 1px solid rgba(183, 206, 99, 0.5);
+              background-color: rgba(183, 206, 99, 0.5);
+              color: #666;
+          }
+
+        }
+        .step_main_r{
+          flex: 1;
+          padding: 25px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          flex-direction: column;
+          font-size: 16px;
+          color: #ED5564;
+          span{
+            text-align: left;
+          }
+          i{
+            margin-right: 12px;
+          }
+        }
+      }
+      .step_footer{
+        padding:0 24px;
+        .book_box_item{
+          padding: 12px 10px;
+          // margin-top: 16px;
+          border-top: 1px solid #EDEDED;
+          border-bottom: 1px solid #EDEDED;
+
+          .flex{
+            justify-content: space-between;
+          }
+          .book_people_select{
+            width: 60%;
+            .item_select{
+              width: 100%;
+              height: 36px;
+            }
+            .ant-select-selection--single{
+              height: 36px;
+            }
+            .ant-select-selection__rendered{
+              line-height: 36px;
+            }
+          }
+          .book_coins_label{
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            color: #848484;
+            line-height: 16px;
+            i{
+              padding-left: 12px;
+              font-size: 24px;
+            }
+
+          }
+        }
+      }
+      .step_footer_bnt{
+        text-align: right;
+        padding: 60px 24px 30px;
+      }
+    }
+
+
+
+  }
+  /**
+   * 右侧
+   */
+  .booking_main_r{
+    width: 340px;
+    background: #FFFFFF;
+
+    .booking_main_r_wrap{
+      box-shadow: 0 1px 4px 0 rgba(0,0,0,0.50);
+      border-radius: 4px;
+    }
+    .booking_r_header{
+      .item_image{
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        background-size: cover;
+        background-position:center;
+        justify-content: space-between;
+        width: 100%;
+        height: 188px;
+        img{
+          position: absolute;
+          object-fit: cover;
+          font-family: 'object-fit: cover;';
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+        }
+        .item_image_bar{
+          position: absolute;
+          background: rgba(74,73,74,0.50);
+          height: 48px;
+          width: 100%;
+          justify-content: space-between;
+          left:0;
+          bottom: 0;
+          .item_rate{
+            padding: 8px 0 8px 12px;
+            line-height: 16px;
+            .item_address{
+              font-size: 12px;
+              // font-weight: 100;
+              color: #fff;
+            }
+            .ant-rate{
+
+              font-size: 16px;
+              li{
+                margin-right: 5px;
+              }
+              .ant-rate-star-half .ant-rate-star-content:before, .ant-rate-star-full:before{
+                  color:  #E9E165;
+              }
+            }
+          }
+          .item_person_price{
+            background: #ED5564;
+            min-width: 108px;
+            border-radius: 8px 0 0 0;
+            text-align: right;
+            font-size: 20px;
+            color: #FFFFFF;
+            line-height: 14px;
+            padding: 12px 12px  7px;
+            box-sizing: border-box;
+            &.item_person_price_base{
+              background: #38cbca;
+            }
+            span{
+              font-size: 12px;
+              display: inline-block;
+              // font-weight: 100;
+              &:first-child{
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+      .item_title{
+        padding: 12px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        h3{
+          flex: 1;
+
+          font-size: 14px;
+          color: #444444;
+          letter-spacing: 0;
+          line-height: 16px;
+        }
+        .item_price{
+          text-align: right;
+          max-width: 100px;
+          width: 80px;
+          line-height: 16px;
+          span{
+            &.item_price1{
+              font-size: 14px;
+              color: #9B9B9B;
+              line-height: 14px;
+              position: relative;
+              &:after{
+                content: '';
+                height: 1px;
+                width: 100%;
+                background-color:#ED5564;
+                position: absolute;
+                top: 8px;
+                left: 0;
+              }
+            }
+            &.item_price2{
+              display: block;
+              font-size: 16px;
+              color: #ED5564;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+    }
+    /**
+     * 右侧中间
+     */
+    .booking_r_body{
+      padding: 0 12px;
+      background: #FAFAFA;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .booking_r_item{
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #EDEDED;
+        font-size: 16px;
+        color: #4A4A4A;
+        line-height: 48px;
+        &.booking_r_item_small{
+          border-bottom: none;
+          line-height: 36px;
+        }
+        &:last-child{
+          border-top: 1px solid #EDEDED;
+          border-bottom: none;
+          .item_txt{
+            font-size: 20px;
+            color: #ED5564;
+          }
+        }
+        .item_label{
+          &:after{
+            content: ':';
+          }
+        }
+        .item_txt{
+          color: #848484;
+        }
+      }
+    }
+    /**
+     * 左侧底部
+     */
+    .booking_r_footer{
+      padding: 12px;
+      h4{
+        font-size: 16px;
+        color: #4A4A4A;
+        line-height: 16px;
+      }
+      .inclusive{
+        font-size: 16px;
+        font-weight: 400;
+        color: #4A4A4A;
+        padding: 12px 0;
+      }
+      p{
+      font-weight: 400;
+      font-size: 14px;
+      color: #363636;
+      line-height: 16px;
+      }
+    }
+
+  }
+}
+.payment_discount_dropdown{
+  li{
+    span{
+      font-size: 12px;
+      text-indent: 1em;
+    }
+  }
+}
+.weixinPayQr_modal{
+  .icon_Wechat {
+      height: 37px;
+      width: 160px;
+      margin: 0 auto;
+      background-position: center;
+      background-size: 80%;
+      background-repeat: no-repeat;
+      background-image: url(http://7xq8kr.com1.z0.glb.clouddn.com/webapi_1485419696_lkd1b_whmo2);
+  }
+  .ant-tag{
+    height: auto;
+  }
+  .qrcode_header{
+    text-align: center;
+    span{
+      font-size: 26px;
+      font-weight: 700;
+      color: #f60;
+      display: block;
+    }
+  }
+  .qrcode_img_wrapper{
+    position: relative;
+    width: 200px;
+    height: auto;
+    min-height: 200px;
+    margin: 0 auto;
+    padding: 6px;
+    border: 1px solid #d3d3d3;
+    box-shadow: 1px 1px 1px #ccc;
+
+    .qrcode_img{
+      width: 100%;
+    }
+  }
+  .qrcode_explain{
+    padding: 10px 0 6px;
+    .fn_left{
+      float: left;
+      font-size: 12px;
+      line-height: 15px;
+    }
+    div {
+       margin-left: 10px;
+    }
+  }
+}
+@media (max-width: $screen-mobile) {
+  .booking_wrap{
+    .booking_main_l{
+      width: 100%;
+      padding: 12px;
+      flex: none;
+      .payment_body{
+        display: flex;
+      }
+      .booking_step{
+        .step_main{
+          padding: 12px;
+          .ant-tag{
+            height: auto;
+          }
+          .payment_wrap{
+            .ant-radio-group{
+              .ant-radio-button-wrapper{
+
+                .icon_Method{
+                  background-size: 100%;
+                }
+              }
+            }
+
+          }
+          .step_main_l{
+            width: 100%;
+            min-width: 100%;
+
+          }
+          .step_main_r{
+            display: none;
+          }
+          .ant-col-6.ant-form-item-label,.ant-col-18{
+            width: 100%;
+            float: none;
+          }
+        }
+        .step_footer{
+          padding: 0 12px;
+          .ant-col-14{
+            width: 100%;
+          }
+          .ant-col-10{
+            display: none;
+          }
+        }
+      }
+    }
+    .booking_main_r{
+      display: none;
+    }
+  }
+  .ant-steps {
+    padding: 0 12px;
+    .ant-steps-main{
+      display: block;
+      .ant-steps-title{
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,819 @@
+@import "../../scss/_variable";
+.trip_detail{
+  .trip_detail_top{
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    img{
+      position: absolute;
+      object-fit: cover;
+      font-family: "object-fit: cover;";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    .item_image_bar{
+      display: none;
+      position: absolute;
+      background: rgba(74,73,74,0.50);
+      height: 48px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      justify-content: space-between;
+      .item_rate{
+        padding: 8px 0 8px 12px;
+        line-height: 16px;
+        .item_address{
+          font-size: 12px;
+          // font-weight: 100;
+          color: #fff;
+        }
+        .ant-rate{
+
+          font-size: 16px;
+          li{
+            margin-right: 5px;
+          }
+          .ant-rate-star-half .ant-rate-star-content:before, .ant-rate-star-full:before{
+              color:  #E9E165;
+          }
+        }
+      }
+      .item_person_price{
+        background: #ED5564;
+        min-width: 108px;
+        border-radius: 8px 0 0 0;
+        text-align: right;
+        font-size: 20px;
+        color: #FFFFFF;
+        line-height: 24px;
+        padding: 12px 12px  7px;
+        box-sizing: border-box;
+        &.item_person_price_base{
+          background: #38cbca;
+          span{
+            display: block;
+          }
+        }
+        .price{
+          display: block;
+          span{
+            display: inline-block;
+            &:first-child{
+              font-size: 16px;
+            }
+          }
+        }
+        span{
+          font-size: 12px;
+          display: inline-block;
+          // font-weight: 400;
+          &:first-child{
+            font-size: 20px;
+            color: #FFFFFF;
+            // line-height: 24px;
+            // display: block;
+          }
+        }
+      }
+    }
+  }
+  .trip_detail_share{
+    height: 88px;
+    border-bottom: 1px solid #EDEDED;
+    .ant-breadcrumb{
+      height: 88px;
+      line-height: 88px;
+      font-size: 16px;
+      flex: 1;
+      text-overflow:ellipsis;
+      -webkit-text-overflow:ellipsis;
+      -moz-text-overflow:ellipsis;
+      white-space:nowrap;
+      overflow: hidden;
+      span{
+        font-weight: 400;
+        // display: -webkit-box;
+        // -webkit-line-clamp: 1;
+        // -webkit-box-orient: vertical;
+      }
+    }
+    .share_wrap{
+      width: 380px;
+      text-align: right;
+      padding-top: 20px;
+    }
+  }
+  .trip_detail_main,.trip_detail_main_mobile{
+    .trip_detail_main_l{
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      padding: 24px 40px 24px 0;
+
+        h1{
+          font-size: 36px;
+          color: #4A4A4A;
+          letter-spacing: 0;
+          line-height: 48px;
+        }
+        .trip_rate_box{
+          padding: 22px 0 26px;
+          // height: 20px;
+          line-height: 20px;
+
+          .trip_rate{
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            .ant-rate{
+              font-size: 24px;
+              color: #E9E165;
+            }
+            .trip_rate_reviews{
+              font-size: 20px;
+              color: #ED5564;
+              vertical-align: middle;
+            }
+          }
+          .trip_address{
+            width: 200px;
+            text-align: right;
+            font-size: 20px;
+            color: #848484;
+
+          }
+        }
+
+        .trip_detail_item{
+          padding: 24px 0;
+          border-bottom: 1px solid #EDEDED;
+          /**
+           * 杂项目
+           */
+          &.trip_detail_item_four{
+            border-top: 1px solid #EDEDED;
+            padding-bottom:0px;
+            margin-bottom: -1px;
+            ul{
+              li{
+                width: 25%;
+                float: left;
+                // border-bottom: 1px solid #EDEDED;
+                text-align: center;
+                font-size: 14px;
+                color: #989898;
+                padding: 24px 0;
+                &.none_border{
+                  border-bottom: 0;
+                }
+                &.Language{
+                  span:last-child{
+                    display: block;
+                  }
+                }
+                i{
+                  display: block;
+                  font-size: 40px;
+                  color: #06BEBD;
+                  // height: 40px;
+                  // width: 40px;
+                  margin: 0 auto 12px ;
+                }
+              }
+            }
+          }
+          &.trip_detail_item_nb{
+            border-bottom:0;
+
+          }
+          .title{
+            font-size: 24px;
+            color: #3C4350;
+            letter-spacing: 0;
+            line-height: 24px;
+            padding-bottom: 24px;
+          }
+          .con{
+            font-size: 16px;
+            color: #4A4A4A;
+            text-align:justify;
+            text-justify:distribute-all-lines;
+            line-height: 24px;
+            font-weight: 400;
+            &+.con{
+              padding-top: 16px;
+            }
+          }
+          .hosted_avatar{
+            text-align: center;
+            .avatar_big_a{
+              height: 88px;
+              width: 88px;
+              margin: 0 auto;
+              display: block;
+              border-radius: 88px;
+            }
+            .avatar_big{
+              height: 100%;
+              width: 100%;
+              border-radius: 100%;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: 100%;
+            }
+            .avatar_name{
+              font-size: 20px;
+              padding-top: 12px;
+              padding-bottom: 16px;
+              letter-spacing: 0;
+              line-height: 20px;
+              a{
+                color: #ED5564;
+              }
+            }
+          }
+          .itinerary_item{
+            padding: 16px 0;
+            border-bottom: 1px solid #EDEDED;
+            .itinerary_item_title{
+              -webkit-flex: 1;
+              -ms-flex: 1;
+              flex: 1;
+            }
+            .itinerary_item_description{
+                width: 340px;
+            }
+          }
+          /**
+           * 价格包含
+           */
+          .price_included_item{
+            margin-bottom: 8px;
+            min-height: 40px;
+            line-height: 40px;
+            display: flex;
+            .extraPayInfo{
+              min-width: 85px;
+            }
+            i{
+              font-size: 40px;
+              margin-right: 30px;
+              height: 40px;
+              width: 40px;
+              background-repeat: no-repeat;
+              background-size: 100%;
+              background-position: center;
+              &.anticon-fees{
+                background-image: url(/static/images/fees_green_40.png);
+              }
+              &.anticon-trans{
+                background-image: url(/static/images/Trans_gray_40.png);
+              }
+              &.anticon-ticket{
+                background-image: url(/static/images/ticket_gray_40.png);
+              }
+              &.anticon-food{
+                background-image: url(/static/images/food_gray_40.png);
+              }
+              &.price_included_active{
+                &.anticon-fees{
+                  background-image: url(/static/images/fees_green_40.png);
+                }
+                &.anticon-trans{
+                  background-image: url(/static/images/Trans_green_40.png);
+                }
+                &.anticon-ticket{
+                  background-image: url(/static/images/ticket_green_40.png);
+                }
+                &.anticon-food{
+                  background-image: url(/static/images/food_green_40.png);
+                }
+              }
+            }
+            span{
+              font-size: 16px;
+              color: #4A4A4A;
+              display: inline-block;
+              font-weight: 400;
+              flex: 1;
+            }
+          }
+          /**
+           * 见面地点
+           */
+          .meeting_point_top{
+            height: 48px;
+            line-height: 24px;
+            display: flex;
+            i{
+              // font-size: 30px;
+              margin-right: 30px;
+              background-repeat: no-repeat;
+              background-size: 100%;
+              background-position: center;
+              height: 29px;
+              width: 40px;
+              background-image: url(/static/images/meet_up_40.png);
+            }
+          }
+          /**
+           * 谷歌地图
+           */
+          .google_map{
+            margin-top: 16px;
+            height: 420px;
+            width: 100%;
+            background: #ddd;
+          }
+        }
+        .trip_detail_picbox{
+          // padding: 24px 0;
+          padding-bottom: 14px;
+          border-bottom: 1px solid #EDEDED;
+          .trip_detail_pic_item{
+            float: left;
+            height: 210px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            .trip_detail_pic_js{
+              cursor: pointer;
+              width: 100%;
+              height: 100%;
+              // border-radius: 5px;
+              background-size: cover;
+              overflow: hidden;
+              position: relative;
+            }
+            .trip_detail_pic_see{
+              display: none;
+            }
+            &.trip_detail_pic_item_4{
+              .trip_detail_pic_see{
+                display: block;
+                background-color: rgba(0,0,0,.3);
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                span{
+                  color: #fff;
+                  font-weight: 500;
+                  position: relative;
+                  top: 45%;
+                }
+              }
+            }
+
+            img{
+              position: absolute;
+              z-index: -1;
+              object-fit: cover;
+              font-family: 'object-fit: cover;';
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+            }
+            &:nth-child(1) {
+              clear: both;
+              padding-right: 5px;
+              width: 50%;
+            }
+            &:nth-child(2) {
+              padding-left: 5px;
+              width: 50%;
+            }
+            &:nth-child(3) {
+              height: 144px;
+              clear: both;
+              padding-right: 7px;
+              width: 33.33%;
+            }
+            &:nth-child(4) {
+              height: 144px;
+              padding-left: 3px;
+              padding-right: 4px;
+              width: 33.34%;
+            }
+            &:nth-child(5) {
+              height: 144px;
+              padding-left: 7px;
+              width: 33.33%;
+            }
+          }
+        }
+    }
+    .trip_detail_main_r{
+      width: 340px;
+      min-width: 340px;
+      box-sizing: border-box;
+      position: relative;
+      // display: -webkit-flex;
+      // display: -ms-flexbox;
+      // display: flex;
+      /**
+       * 预定
+       */
+      .book_box{
+        margin-top: 24px;
+        background: #FAFAFA;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);
+        border-radius: 4px;
+        .book_box_item{
+          padding: 12px 10px;
+          justify-content: space-between;
+          .book_people_select{
+            .ant-select-selection--single{
+              height: 36px;
+            }
+            .ant-select-selection__rendered{
+              line-height: 36px;
+            }
+          }
+          .book_coins_label{
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            color: #848484;
+            line-height: 16px;
+            i{
+              max-width: 24px;
+              font-size: 24px;
+              margin-right: 10px;
+              // background-position: center;
+              // background-repeat: no-repeat;
+            }
+          }
+          .book_coins{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            font-size: 20px;
+            color: #ED5564;
+            line-height: 20px;
+            .price{
+              span{
+                display: inline-block;;
+                margin-left: 5px;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+        .book_bnt{
+          flex-direction:column;
+          .ant-btn{
+            height: 36px;
+            width: 100%;
+          }
+          .ant-btn-next,.ant-btn-primary{
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+  /**
+   * 评论
+   */
+  .reviews_bar{
+    height: 88px;
+    line-height: 88px;
+    background: #F6F6F6;
+    .reviews_bar_main{
+      font-size: 24px;
+      color: #3C4350;
+      span{
+        padding-left: 20px;
+        font-size: 18px;
+        color: #ED5564;
+      }
+    }
+  }
+  .reviews_empty{
+    text-align: center;
+    margin: 20px auto;
+    .reviews_empty_icon{
+      width: 60px;
+      height: 60px;
+      display: block;
+      margin: 0 auto 5px;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: contain;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABWCAMAAAAgy+JSAAACvlBMVEVMaXFKSkpVVVVKSkpRUVFRUVH///9LS0tKSkpLS0tKSkpLS0tKSkpLS0tVVVVLS0tLS0tKSkpLS0tLS0tLS0tLS0tKSkpNTU1MTExLS0tNTU1KSkpRUVFQUFBbW1tLS0tKSkpLS0tKSkpOTk5LS0tKSkpLS0tKSkpLS0tLS0tQUFBPT09LS0tKSkpKSkpLS0tLS0tKSkpOTk5NTU1VVVVSUlJKSkpLS0tKSkpKSkpOTk5MTExLS0tLS0tKSkpLS0tLS0tKSkpLS0tLS0tKSkpNTU1KSkpOTk5KSkpKSkpKSkpLS0tKSkqAgIBNTU1MTExKSkpMTExMTExKSkpMTExLS0tdXV1NTU1LS0tNTU1MTExNTU1MTExLS0tKSkpMTExSUlJKSkpOTk5MTExKSkpLS0tMTExLS0tQUFBLS0tMTExNTU1KSkpKSkpOTk5MTExOTk5LS0tLS0tLS0tMTExLS0tLS0tLS0tKSkpKSkpKSkpMTExKSkpNTU1MTExLS0tgYGBtbW1LS0tKSkpKSkpNTU1KSkpLS0tKSkpNTU1KSkpLS0tVVVVMTExLS0tMTExLS0tLS0tLS0tPT09LS0tMTExNTU1LS0tKSkpNTU1MTExOTk5VVVVLS0tNTU1MTExLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tPT09LS0tKSkpKSkpKSkpLS0tLS0tKSkpKSkpNTU1LS0tMTExKSkpLS0tVVVVLS0tKSkpLS0tLS0tMTExLS0tKSkpMTExLS0tLS0tLS0tNTU1LS0tMTExLS0tLS0tLS0tLS0tLS0tMTExLS0tLS0tLS0tLS0tLS0tLS0tNTU1KSkpLS0tMTExNTU1mZmZLS0tLS0tKSkpLS0tLS0tLS0tKSkpLS0tLS0tLS0tKSkpVVVVLS0tKSkpMTExLS0tLS0tKSkrm04hZAAAA6XRSTlMA+xXfExYB/f784vX08xIi1Ob54NAR4yEl0xT6JiAO5fjkHxfy8eF4c88jHd730t320SQeDxzVfnztOzl753/XX+nW21k8XSdnSM532AI/Q9x2gPBhegs4zEJbKHl9hmgZdRpeN1VlwRCINlo+xA0bMYHoyS+LKVxWGGBXxwprQQgHaupPK8t0jUyX7wlAOkqC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)
+    }
+  }
+  /**
+   * 评论item
+   */
+   .reviews_item{
+     border-bottom: 1px solid #EDEDED;
+     display: flex;
+     padding: 24px 0;
+     .reviews_item_avatar{
+       width: 88px;
+       text-align: center;
+       margin-right: 32px;
+       img{
+         width: 100%;
+         height: 88px;
+         border-radius: 100%;
+       }
+     }
+     .reviews_item_con{
+       flex: 1;
+       h3{
+        font-size: 20px;
+        color: #3C4350;
+        line-height: 20px;
+        margin-bottom: 24px;
+       }
+       p{
+        //  font-weight: 100;
+        font-size: 16px;
+        color: #4A4A4A;
+        line-height: 1.8;
+        margin-bottom: 24px;
+       }
+       .reviews_item_con_bottom{
+          display: flex;
+          justify-content: space-between;
+          height: 30px;
+          line-height: 30px;
+        span{
+          // font-weight: 100;
+          font-size: 16px;
+          color: #C5C6C7;
+          display: block;
+          line-height: 30px;
+        }
+       }
+     }
+   }
+}
+.google_map,.trip_detail_main_mobile,.book_box_moblie{
+  display: none;
+}
+
+.inquiry_wrap_modal{
+  .inquiry_body{
+
+    .book_box_item{
+      width: 50%;
+      float:left;
+      padding:12px 0 12px 6px;
+      box-sizing: border-box;
+      &:first-child{
+        padding-left: 0;
+        padding-right: 6px;
+      }
+      .book_coins_label{
+
+        padding-right: 12px;
+        line-height: 40px;
+      }
+      .book_people_select{
+        flex: 1;
+        .ant-select-selection__rendered{
+          line-height: 44px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-mobile) {
+  .trip_detail{
+    .trip_detail_top{
+      height: 250px;
+      .item_image_bar{
+        display: flex;
+      }
+    }
+    .trip_detail_share,.reviews_bar,.trip_detail_main,.reviews_wrap{
+      display: none;
+    }
+    .trip_detail_main_mobile{
+      display: block;
+      .ant-tabs-bar{
+        margin-bottom: 0;
+      }
+      .ant-tabs-nav {
+        width: 100%;
+        .ant-tabs-tab{
+          background-color: #f4f4f4;
+          text-align: center;
+          margin: 0;
+          height: 48px;
+          width: 33.33%;
+          &.ant-tabs-tab-active{
+            background-color: #fff;
+          }
+        }
+      }
+      .ant-tabs-tabpane{
+        padding: 12px
+      }
+      .trip_detail_main_l{
+
+        flex:none;
+        h1{
+          font-size: 24px;
+          line-height: 28px;
+        }
+        .trip_detail_item{
+          padding: 12px 0;
+          &.trip_detail_item_four{
+            ul{
+              li{
+                font-size: 14px;
+                color: #989898;
+                padding: 24px 0;
+                i{
+                  display: block;
+                  font-size: 32px;
+                }
+              }
+            }
+          }
+          .title{
+            font-size: 18px;
+            padding-bottom: 16px;
+          }
+          .con{
+            font-size: 14px;
+          }
+          .itinerary_item{
+            .itinerary_item_description{
+              max-width: 300px;
+              width: 66.67%;
+            }
+          }
+        }
+        .trip_rate_box {
+          padding: 12px 0 24px;
+          .trip_rate {
+            .ant-rate,.trip_rate_reviews{
+              font-size: 16px;
+            }
+          }
+          .trip_address{
+            width: 100px;
+            font-size: 16px;
+          }
+        }
+        .trip_detail_picbox{
+          padding-top: 24px;
+          .trip_detail_pic_item{
+            float: left;
+            height: 125px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            &.trip_detail_pic_item_3{
+              .trip_detail_pic_see{
+                display: block;
+                background-color: rgba(0,0,0,.3);
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                span{
+                  color: #fff;
+                  font-weight: 500;
+                  position: relative;
+                  top: 45%;
+                }
+              }
+            }
+            &.trip_detail_pic_item_4{
+              .trip_detail_pic_see{
+                display: none;
+              }
+            }
+
+            &:nth-child(1) {
+              clear: both;
+              padding-right: 5px;
+              width: 50%;
+            }
+            &:nth-child(2) {
+              padding-left: 5px;
+              width: 50%;
+            }
+            &:nth-child(3) {
+              height: 125px;
+              clear: both;
+              padding-right: 5px;
+              width: 50%;
+            }
+            &:nth-child(4) {
+              height: 125px;
+              padding-left: 5px;
+              padding-right: 0px;
+              width: 50%;
+            }
+            &:nth-child(5) {
+              display: none;
+            }
+          }
+        }
+
+      }
+      .reviews_wrap,.reviews_bar{
+        display: block;
+        .reviews_bar_main{
+          font-size:18px;
+          background-color: #fff;
+        }
+        .reviews_item{
+          padding: 16px 0;
+          .reviews_item_avatar{
+            width: 60px;
+            margin-right: 12px;
+            img{
+              height: 60px;
+            }
+          }
+          .reviews_item_con {
+            h3,p{
+              margin-bottom: 12px;
+            }
+            p{
+              font-size: 14px;
+              line-height: 1.5;
+            }
+            .reviews_item_con_bottom{
+              // flex-direction: column;
+              // height: auto;
+              // line-height: 20px;
+              .ant-rate {
+                  font-size: 16px;
+              }
+              span{
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+      .reviews_bar{
+        height: 30px;
+        line-height: 30px;
+        background-color: #fff;
+      }
+    }
+    .book_box_moblie{
+      display: block;
+
+      z-index: 100;
+      height: 60px;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      background: #FFFFFF;
+      box-shadow: 0 0 1px 0 rgba(0,0,0,0.50);
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+      .book_box_txt{
+        width: 33.33%;
+        height: 40px;
+        line-height:  40px;
+        color: #ED5564;
+        text-align: left;
+        span{
+          font-size: 20px;
+        }
+        .price{
+          display: block;
+          font-size: 20px;
+          span{
+            font-size: 12px;
+          }
+        }
+      }
+      .book_box_bnt{
+        flex: 1;
+        button {
+          width: 48%;
+          margin-left: 2%;
+          line-height: 1;
+          white-space:pre-wrap;
+          &:first-child{
+            margin-left: 0;
+            margin-right: 2%;
+          }
+        }
+      }
+    }
+  }
+
+}

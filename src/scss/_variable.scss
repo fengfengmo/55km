@@ -1,0 +1,14 @@
+// $namespace: vux;
+//
+// $color-wechat-green: #04BE02;
+//
+// $theme-color: #04BE02;
+// $opacity-disabled: 0.5;
+
+/**
+ * 移动端宽度
+ */
+ // Small screen / tablet
+ $screen-mobile              : 768px;
+ $screen-mobile-min          : $screen-mobile;
+ $screen-mobile-max          : ($screen-mobile-min - 1);

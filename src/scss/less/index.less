@@ -1,0 +1,13 @@
+@import "../../../node_modules/antd/lib/style/themes/default";
+@import "../../../node_modules/antd/lib/style/mixins/index";
+@import "../../../node_modules/antd/lib/button/style/mixin";
+
+// 引入ant btn的less样式
+// -----------------------------
+
+.ant-btn-next {
+  .button-variant-primary(@btn-primary-color; @error-color);
+  &.ant-btn-clicked:after {
+    border: 0 solid @error-color;
+  }
+}

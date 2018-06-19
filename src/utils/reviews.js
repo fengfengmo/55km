@@ -1,0 +1,190 @@
+const reviews = {
+  data:[
+    {
+      author_id:0,
+      avatar_url:'webapi_1487252665_77gcy_4uzea',
+      name:'Sunsah',
+      content:'感谢小西里手十分用心的陪伴，虽然现在人已经不在泰国境内了，可满脑子还是朱拉隆功大学校园的美丽和浓厚的学术氛围、大皇宫的金碧辉煌与雄伟壮阔，考山路的人声鼎沸与舒适。谢谢小西，谢谢55km，谢谢你们给我带来的体验。',
+      create_at:1488174126000,
+      rate:5,
+      local_expert:570,
+      trip_id:436,
+      trip_title:'曼谷轻松一日游【朱拉隆功大学、大皇宫、玉佛寺、卧佛寺、考山路】',
+    },
+    {
+      author_id:0,
+      avatar_url:'webapi_1486959763_kobr5_au1jv',
+      name:'Kasy',
+      content:'和小西一起逛了朱拉隆功大学和农业大学，我们修改了去大皇宫的计划，去了农业大学，体验到了当地大学的原汁原味，感受了曼谷的热情。非常开心参加这次55km的体验官活动，5星好评，小西人非常好，不遗余力，我们在一起玩的很开心。',
+      create_at:1488174126000,
+      rate:5,
+      local_expert:570,
+      trip_id:436,
+      trip_title:'曼谷轻松一日游【朱拉隆功大学、大皇宫、玉佛寺、卧佛寺、考山路】',
+    },
+    {
+      author_id:809,
+      avatar_url:'webapi_1487508714_mceko_0lz2o',
+      name:'Jannie',
+      content:'非常独特的体验！从酒店前台接我们开始，AK这个新朋友就带我们迅速融入当地生活体验，去不同的市场购买最新鲜的食材，交流沟通最有名的泰式冬阴功汤做法',
+      create_at:1487575679000,
+      rate:5,
+      local_expert:876,
+      trip_id:443,
+      trip_title:'Real Thai Home Cooking with AK',
+    },
+    {
+      author_id:0,
+      avatar_url:'webapi_1487579571_araul_rj0cn',
+      name:'limitless',
+      content:'袁同学安排得很周到，带我领略了清迈大学的风采，参观了大操场，体育馆，学校夜市，之后还在泰服开黑嘻嘻',
+      create_at:1487575679000,
+      rate:5,
+      local_expert:563,
+      trip_id:210,
+      trip_title:'萌游清迈【宁曼路、清迈大学、古寺、玛雅商场、网吧开黑（泰服）】',
+    },
+    {
+      author_id:0,
+      avatar_url:'webapi_1487678445_o8zhc_eei03',
+      name:'啊昌',
+      content:'抱着尝试的心态报了名，结果出人意料，人妖秀很好看，演员很专业，舞台效果很不错，而且接送的师傅很准时，是自由行中蛮不错的一个经历！',
+      create_at:1487678484000,
+      rate:5,
+      local_expert:582,
+      trip_id:296,
+      trip_title:'脸红心跳的夜场项目---人妖秀【罗马金宫人妖秀 VVIP专座】',
+    },
+    {
+      author_id:1066,
+      avatar_url:'webapi_1487946425_clp1e_3s2dc',
+      name:'史黛拉233',
+      content:'我对这次行程感觉非常满意，我是26号和男票两个人想去安帕瓦水上市场和美工铁道市场玩，这也是我们五日泰国自由行的最后一日，我们很有幸的通过55公里平台的体验官项目获得了体验券，在平台上看项目的时候有很多选择，所以结合了自己想去的地点和时间安排选择了Nooi的安帕瓦水上市场和美工铁道市场一日游。<br/><br/>首先是前期工作，Nooi是泰国本地人，但英文很好，所以在平台向她发送消息后她很快的回了我，我们也互相加了微信，Nooi人非常nice，想问的都可以直接问她，回复基本都是秒回。这里也想感谢55公里平台的工作人员，态度都特别好，而且基本有问题很快就能得到解决，当然平台现在只有网页版，如果能有App就更好了。<br/><br/>时间安排：我们因为25号晚上很晚才从芭提雅赶回曼谷，然后入住酒店，第二天早上起床也比较晚，其实正常去美工铁道市场应该早点去，看火车的话只在每天11:00am，3:00pm和5:40pm时候有，这个还是我们后来听Nooi的丈夫Ton告诉我们的。所以正常的话应该是8点多就和Nooi和Ton早起一起去看了，但因为我们起晚了，所以错过了比较好的时机，但是Nooi还是很贴心的给我们安排了她的出租车司机，Nooi和Ton自己也有车，所以也可以开车带我们一起去，但是当时的情况还是出租车司机比较合适，从曼谷往安帕瓦水上市场开需要1.5h，不需要我们自己出出租车费，这一切都囊括在了费用里面，而且接下来去水上市场和美工铁道市场时间都很Flexible，我们想去哪个小店逛可以直接告诉Nooi或者是Ton，然后他们会很nice的在门口等我们，个人感觉这种私人订制比旅游团真的舒服太多，不用赶着赶着催你往下一个地方跑，也不会不停地把你往购物店里面带。<br/><br/>价格：价格我想说真的很良心，性价比很高，我看了一下马蜂窝以及淘宝上这种类型一日游的价格每个人基本上都要250+跟团，但在55公里平台上Nooi和Ton的这个一日游项目我和男票两个人只需要600元，相当于每个人300元，关键是来回的出租车车费和在水上市场玩的来回船费都不需要我们出，而且贴心的Nooi和Ton尤其是Ton还会主动自掏腰包给我们买他觉得一定要尝试的泰国本土美食，在美工铁道市场的时候得知我们还没有吃过芒果糯米饭主动帮我们买了一份，真心觉得他和Nooi实在太nice了。<br/><br/>服务：Nooi和Ton的服务真的很赞，幽默风趣，并且很善良，从来不催我们，买东西等位的时候都陪在我们身边，或者在外面等我们，会主动用泰语帮我们问价格，而且会很热情的帮我们拍照，我和男票在喂鱼的时候忘记拍照都是Nooi和Ton帮忙拍的给我们留作纪念，PS 喂鱼的鱼食and我们去一个寺庙的动物园喂小鹿骆驼兔子马小绵羊的空心菜也是他们给买的，真的不要太好：）而且我们在路上很多关于佛的问题，他们都会很nice的给我们解释，之前我就问过寺庙内佛祖身上为什么有七条龙，Ton解释过后才知道那个是佛祖重生的时候来保护佛祖的。回去的路上和Ton闲聊，包括泰国教育医疗政治诸多话题，蛮开心的，虽然我后来困的睡着了23333<br/><br/>Anyway，我觉得这次行程真的特别棒，时间完全合适，而且行程也很充实，服务特别好，会舒服。给Nooi和Ton以及55公里平台点个赞！',
+      create_at:1488174126000,
+      rate:5,
+      local_expert:595,
+      trip_id:354,
+      trip_title:'Maeklong Railway Market & Amphawa Floating Market 一城二市，美功铁道市场，安帕瓦水上市场一日游',
+    },
+    {
+      author_id:595,
+      avatar_url:'webapi_1487040643_qqg37_ypxrr',
+      name:'Nooi',
+      content:'Stella and her boyfriend was a nice guests. They speak good English, polite, talkative and friendly. We have a good time and good experience together. Anyway I feel sorry for them that they missed the excited train. Thank you Stella for be my great guest.',
+      create_at:1488552369000,
+      rate:5,
+      local_expert:1066,
+      local_expert_type: true,
+      trip_id:354,
+      trip_title:'Maeklong Railway Market & Amphawa Floating Market 一城二市，美功铁道市场，安帕瓦水上市场一日游',
+    },
+    // {
+    //   author_id:805,
+    //   avatar_url:'webapi_1487041434_vyvo9_y8cf4',
+    //   name:'啊昌',
+    //   content:'里手真的很专业，很尽责，还为我们讲解了当地好玩的其他地方，下次我还会再来的',
+    //   create_at:1488465969000,
+    //   rate:5,
+    //   local_expert:569,
+    //   trip_id:225,
+    //   trip_title:'摩托车探索清迈曲径通幽处 【摩托车出行、山间景色】',
+    // },
+    {
+      author_id:772,
+      avatar_url:'webapi_1488555520_fc34g_qja8b',
+      name:'Avon',
+      content:'很棒的一次体验，湄萍河是清迈的母亲河，位于湄南河的上游，河流发源于清迈北部的山区，然后从清迈市区穿城而过，再流经泰北高原，由曼谷流入大海。湄萍河同时也是泰国母亲河—湄南河的源头，它的河面并不宽敞，但静水无波。这次被安排在湄萍河沿岸的一家特色的餐厅，主厨是米其林的大师，色，味俱佳，感谢里手安排特别适合江浙沪口味的泰菜，小菜吃吃，清风徐徐，看看过往船只，感受的这泰北慢生活',
+      create_at:1488552369000,
+      rate:4,
+      local_expert:551,
+      trip_id:230,
+      trip_title:'清迈人的半日闲情【寺庙、湄萍河风情、当地特色咖啡馆，米其林主厨】',
+    },
+    {
+      author_id:1041,
+      avatar_url:'webapi_1487926704_dfesk_2wej5',
+      name:'脏脏',
+      content:'非常满意，去了吃泰餐，三个菜两瓶水才花了二百四十株。然后去了喜欢的安静的酒吧，有歌手唱歌，也能吃饭。',
+      create_at:1488552369000,
+      rate:5,
+      local_expert:541,
+      trip_id:141,
+      trip_title:'曼谷夜生活，不止啤酒和音乐 【夜市、泰拳比赛、看秀、红灯区】',
+    },
+    {
+      author_id:912,
+      avatar_url:'webapi_1487251361_9tsaf_kizms',
+      name:'nexx',
+      content:'里手真的很专业，很尽责，还为我们讲解了当地好玩的其他地方，下次我还会再来的',
+      create_at:1488552369000,
+      rate:4,
+      local_expert:569,
+      trip_id:225,
+      trip_title:'摩托车探索清迈曲径通幽处 【摩托车出行、山间景色】',
+    },
+    {
+      author_id:813,
+      avatar_url:'webapi_1488553361_lrf57_0fu7r',
+      name:'Ben',
+      content:'总体感觉55km提供的服务很好，值得参与。首先，行程覆盖很多，能满足不同需求的游客，连我这种小众路线都有提供，值得称赞。其次，里手服务很热情，也很有亲和感，对当地十分熟悉，且很配合我的各种需求，比如调整时间，配合路线等等。如果其他小伙伴第一次去一个陌生的地方旅游，有个语言相同的当地人带着还是很有安全感的，而且行程灵活，可以通过一个或几个行程熟悉当地，然后再自己游玩。另外，能有人在一路上一起扯扯淡也是很舒服嘛，更何况还被热情的邀请晚上一起去玩杀人游戏? 总之，不管是对旅行菜鸟还是像我这种又老又懒的鸟都是非常值得尝试哦！',
+      create_at:1488552369000,
+      rate:4.5,
+      local_expert:569,
+      trip_id:526,
+      trip_title:'晨游泰国最灵验的寺庙',
+    },
+    {
+      author_id:788,
+      avatar_url:'webapi_1486715118_4nkme_jx4ph',
+      name:'zach',
+      content:'nooy非常友好，上车就贴心的递上水，会热心的提醒和介绍沿途的风景，比如toll road桥上的湄南河景色就很美！对行程火车到达的时间等等非常了解，带我们去了个非常好的看火车点，能坐下喝水，nooy还亲自掏腰包买了椰子和很多小吃给我们尝，而且她选择的那些小吃真的味道还不错！比我自己东买西买的好吃的多，安帕瓦的船游也有去，nooy就充当解说了哈哈😄里面有个地方有动物园，还给了我鱼饲料去喂鱼，那鱼超大的，很想烤着吃……下午回程我和我妈都玩的很尽兴，车上都睡着了，辛苦nooy一路陪伴，最后还要开车2小时，总之非常完美的一次体验！最后不得不说，包含门票的这种当地游体验真的很棒，一路轻松啥都不操心👏? 总之，不管是对旅行菜鸟还是像我这种又老又懒的鸟都是非常值得尝试哦！',
+      create_at:1488552369000,
+      rate:5,
+      local_expert:595,
+      trip_id:354,
+      trip_title:'Maeklong Railway Market & Amphawa Floating Market 一城二市，美功铁道市场，安帕瓦水上市场一日游',
+    },
+    {
+      author_id:0,
+      avatar_url:'webapi_1486715118_4nkme_jx4ph',
+      name:'min',
+      content:'在泰国留学的云南姑娘，交流当然就没问题啦，很熟悉交通，对泰国的一些话题、美食还挺了解的（主要是我八卦）',
+      create_at:1488552369000,
+      rate:3,
+      local_expert:578,
+      trip_id:259,
+      trip_title:'超饱满的曼谷游－午出夜归，寺庙、展馆、夜生活一网打尽！ 【大皇宫、玉佛寺、卧佛寺、暹罗海洋馆、杜莎夫人蜡像馆，夜市、看秀！】',
+    },
+    {
+      author_id:876,
+      avatar_url:'webapi_1487163168_8u1a9_4v7to',
+      name:'Chef AK',
+      content:'I really had a good experience with Jannie and her friend. Above all was how we had a real interactions, we shared our stories, opinions, and experiences. I believe that the core value of tourism is to see and learn the culture of the country you travel and I love the way 55km created a platform that allow the tourist and the local to meet and learn from each other.',
+      create_at:1487575679000,
+      rate:5,
+      local_expert:809,
+      local_expert_type:true,
+      trip_id:443,
+      trip_title:'Real Thai Home Cooking with AK',
+    }
+  ],
+  /**
+   * [id description]
+   * @type 是否根据里手id查找
+   */
+  getReviewsNum (id=0, type, review=0) {
+    const data = reviews.data.filter((item)=>{
+      return type && parseInt(id)===item.local_expert || (parseInt(id)===item.trip_id && !item.local_expert_type)
+    })
+    if (review) {
+      return data && (data.length + review) ||  review 
+    }
+    return data && data.length || 0
+  },
+  getReviewsData (id=0,type) {
+    return reviews.data.filter((item)=>{
+      return type && parseInt(id)===item.local_expert || (parseInt(id)===item.trip_id && !item.local_expert_type)
+    })
+  }
+}
+module.exports = reviews

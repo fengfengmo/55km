@@ -1,0 +1,61 @@
+@import "../../scss/_variable";
+.agreement{
+  padding: 24px;
+  .markdown{
+    -webkit-font-smoothing: antialiased;
+font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+h1,h2,h3{
+  font-weight: 700;
+
+}
+    h1{
+      font-size: 30px;
+    }
+    h2{
+      margin-top: 18px;
+      font-size: 24px;
+    }
+    h3{
+      margin-top: 18px;
+      font-size: 18px;
+    }
+    p {
+      margin-top: 18px;
+      text-indent: 2em;
+
+      &:last-child{
+        text-align: right;
+      }
+    }
+    ul{
+        margin-left: 0px;
+        li {
+            // list-style: disc;
+            padding-left: 2em;
+            position: relative;
+            &::before{
+              position: absolute;
+              left: 0;
+            content:"➢";
+          }
+        }
+        ol{
+          margin-left: 2em;
+          list-style-type:upper-roman;
+          li{
+            padding-left: 0;
+            &::before{
+          display: none;
+            content:" ";
+            }
+          }
+        }
+    }
+
+  }
+}
+@media (max-width: $screen-mobile) {
+  .agreement{
+    padding: 12px;
+  }
+}

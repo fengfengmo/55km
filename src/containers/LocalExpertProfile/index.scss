@@ -1,0 +1,315 @@
+@import "../../scss/_variable";
+.local_expert_profile{
+  .profile_top{
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    img{
+      position: absolute;
+      object-fit: cover;
+      font-family: "object-fit: cover;";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    .profile_avatar{
+      cursor: pointer;
+      width: 160px;
+      min-width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 5px solid #d8d8d8;
+      overflow: hidden;
+      position: absolute;
+      bottom: -85px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+  .profile_main{
+    padding: 100px 0 10px;
+    background: #fafafa;
+    .profile_information{
+      text-align: center;
+      margin: 0 auto 5px;
+      width: 70%;
+      h1{
+        margin: 0 auto;
+        font-size: 36px;
+      }
+    }
+  }
+  .profile_trip{
+    padding: 10px 2.5%;
+    h2{
+      margin: 12px 0;
+      line-height: 1.2;
+      padding: 12px 0;
+      font-weight: 500;
+      font-size: 24px;
+      border-bottom: 1px solid #d0d0d0;
+    }
+  }
+  .trip_detail_picbox{
+    // padding: 24px 0;
+    // padding-bottom: 14px;
+    // border-bottom: 1px solid #EDEDED;
+    .trip_detail_pic_item{
+      float: left;
+      height: 330px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      .trip_detail_pic_js{
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        // border-radius: 5px;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+      }
+      .trip_detail_pic_see{
+        display: none;
+      }
+      &.trip_detail_pic_item_4{
+        .trip_detail_pic_see{
+          display: block;
+          background-color: rgba(0,0,0,.3);
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          span{
+            color: #fff;
+            font-weight: 500;
+            position: relative;
+            top: 45%;
+          }
+        }
+      }
+
+      img{
+        position: absolute;
+        z-index: -1;
+        object-fit: cover;
+        font-family: 'object-fit: cover;';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      &:nth-child(1) {
+        clear: both;
+        padding-right: 5px;
+        width: 50%;
+      }
+      &:nth-child(2) {
+        padding-left: 5px;
+        width: 50%;
+      }
+      &:nth-child(3) {
+        height: 244px;
+        clear: both;
+        padding-right: 7px;
+        width: 33.33%;
+      }
+      &:nth-child(4) {
+        height: 244px;
+        padding-left: 3px;
+        padding-right: 4px;
+        width: 33.34%;
+      }
+      &:nth-child(5) {
+        height: 244px;
+        padding-left: 7px;
+        width: 33.33%;
+      }
+    }
+  }
+  /**
+   * 评论
+   */
+  .reviews_bar{
+    height: 88px;
+    line-height: 88px;
+    background: #F6F6F6;
+    .reviews_bar_main{
+      font-size: 24px;
+      color: #3C4350;
+      span{
+        padding-left: 20px;
+        font-size: 18px;
+        color: #ED5564;
+      }
+    }
+  }
+  /**
+   * 评论item
+   */
+   .reviews_item{
+     border-bottom: 1px solid #EDEDED;
+     display: flex;
+     padding: 24px 12px;
+     .reviews_item_avatar{
+       width: 88px;
+       text-align: center;
+       margin-right: 32px;
+       img{
+         width: 100%;
+         height: 88px;
+         border-radius: 100%;
+       }
+     }
+     .reviews_item_con{
+       flex: 1;
+       a{
+         font-size: 18px;
+        //  color: #ED5564;
+
+       }
+       h3{
+        font-size: 20px;
+        color: #3C4350;
+        line-height: 20px;
+
+        margin-bottom: 24px;
+       }
+       p{
+        //  font-weight: 100;
+        font-size: 16px;
+        color: #4A4A4A;
+        line-height: 20px;
+        margin-top: 18px;
+        margin-bottom: 24px;
+       }
+       .reviews_item_con_bottom{
+          display: flex;
+          justify-content: space-between;
+          height: 30px;
+          line-height: 30px;
+        span{
+          font-weight: 100;
+          font-size: 16px;
+          color: #C5C6C7;
+          display: block;
+          line-height: 30px;
+        }
+       }
+     }
+   }
+}
+@media (max-width: $screen-mobile) {
+  .local_expert_profile{
+    .profile_top{
+      height: 200px;
+      .profile_avatar{
+        width: 90px;
+        min-width: 90px;
+        height: 90px;
+        bottom: -45px;
+      }
+    }
+    .profile_main{
+      padding-top: 60px;
+      .profile_information{
+        h1{
+          font-size: 24px;
+        }
+      }
+    }
+    .profile_trip{
+      h2{
+        font-size: 18px;
+
+      }
+
+    }
+
+    .trip_detail_picbox{
+      padding-top: 24px;
+      .trip_detail_pic_item{
+        float: left;
+        height: 125px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        &.trip_detail_pic_item_3{
+          .trip_detail_pic_see{
+            display: block;
+            background-color: rgba(0,0,0,.3);
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            span{
+              color: #fff;
+              font-weight: 500;
+              position: relative;
+              top: 45%;
+            }
+          }
+        }
+        &.trip_detail_pic_item_4{
+          .trip_detail_pic_see{
+            display: none;
+          }
+        }
+
+        &:nth-child(1) {
+          clear: both;
+          padding-right: 5px;
+          width: 50%;
+        }
+        &:nth-child(2) {
+          padding-left: 5px;
+          width: 50%;
+        }
+        &:nth-child(3) {
+          height: 125px;
+          clear: both;
+          padding-right: 5px;
+          width: 50%;
+        }
+        &:nth-child(4) {
+          height: 125px;
+          padding-left: 5px;
+          padding-right: 0px;
+          width: 50%;
+        }
+        &:nth-child(5) {
+          display: none;
+        }
+      }
+    }
+    .reviews_item{
+      .reviews_item_avatar{
+        margin-right: 12px;
+        width: 60px;
+        img{
+          height: 60px;
+        }
+      }
+      .reviews_item_con{
+        a{
+          font-size: 15px;
+        }
+        p{
+          font-size: 14px;
+          line-height: 1.5;
+          margin-top: 9px;
+          margin-bottom: 10px;
+        }
+        .reviews_item_con_bottom{
+          .ant-rate{
+            font-size: 16px;
+          }
+          span{
+            font-size: 13px;
+          }
+        }
+      }
+
+    }
+  }
+}

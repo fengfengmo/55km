@@ -1,0 +1,314 @@
+@import "../../scss/_variable";
+.booking_wrap{
+  .list_title{
+    margin: 0;
+    padding: 20px 0 40px;
+  }
+  .main_wrap{
+    width: 100%;
+    min-height: 600px;
+    padding: 20px 0;
+  }
+  .ant-tabs{
+    border: 1px solid #C5C6C7;
+    border-radius: 4px;
+    .ant-tabs-content{
+      .ant-tabs-tabpane{
+          padding: 0 24px;
+      }
+
+    }
+  }
+  .ant-tabs-nav{
+    width: 100%;
+    .ant-tabs-ink-bar{
+      height: 4px;
+    }
+    .ant-tabs-tab{
+      background-color: #f4f4f4;
+      text-align: center;
+      margin: 0;
+      height: 48px;
+      width: 33.33%;
+      &.ant-tabs-tab-active{
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        background-color: #fff;
+      }
+    }
+  }
+
+  .messages_empty{
+    width: 40%;
+    p{
+      font-size: 16px;
+      color: #C5C6C7;
+      line-height: 16px;
+      padding-top: 19px;
+      padding-bottom: 38px;
+    }
+    h3{
+      font-size: 32px;
+      color: #3C4350;
+      line-height: 32px;
+      span{
+        color:  #ED5564;
+      }
+    }
+    button{
+      margin: 16px 0 32px 0;
+    }
+  }
+  /**
+   * 表格
+   */
+  .trips_table{
+    padding-bottom: 24px;
+    .trips_table_thead{
+      padding-bottom: 10px;
+      border-bottom: 1px solid #EDEDED;
+      h4{
+        font-size: 16px;
+        color: #3C4350;
+        line-height: 16px;
+      }
+      div{
+        border: 0;
+      }
+    }
+    .order_list_columns1{
+      width: 50%;
+      padding: 12px 12px 12px 0;
+      .order_banner{
+        width: 120px;
+        height: 120px;
+        margin-right: 12px;
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        img{
+          position: absolute;
+          object-fit: cover;
+          font-family: "object-fit: cover;";
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+        }
+      }
+      .order_title_wrap{
+        flex: 1;
+        flex-direction: column;
+        // justify-content:space-between;
+        .order_title{
+          flex: 1;
+          font-size: 16px;
+          color: #4A4A4A;
+        }
+        .order_title_destination{
+          height: 40px;
+          font-weight: 100;
+          font-size: 12px;
+          color: #4A4A4A;
+          display:table-cell;
+          vertical-align:bottom;
+          .ant-rate{
+            font-size: 16px;
+            color:#E9E165;
+          }
+        }
+      }
+    }
+
+    .order_list_columns2{
+      padding: 12px;
+      border-left: 1px solid #EDEDED;
+      width: 15%;
+      flex-direction: column;
+      justify-content:space-between;
+      text-align: center;
+      .columns2_header,.columns2_body{
+        font-size: 14px;
+        color: #3C4350;
+        line-height: 20px;
+        flex: 1;
+        span{
+          display:block;
+          text-align: center;
+          font-size: 36px;
+          color: #ED5564;
+          line-height: 36px;
+        }
+      }
+
+    }
+
+    .order_list_columns3{
+      padding: 12px;
+      border-left: 1px solid #EDEDED;
+      width: 15%;
+      flex-direction: column;
+      .columns3_header{
+        font-size: 14px;
+        color: #3C4350;
+        line-height: 20px;
+        flex: 1;
+      }
+      .columns3_body{
+        flex: 1;
+        font-size: 14px;
+        line-height: 20px;
+        a{
+            color: #ED5564;
+        }
+      }
+    }
+
+    .order_list_columns4{
+      padding: 12px;
+      border-left: 1px solid #EDEDED;
+      flex: 1;
+      flex-direction: column;
+      .columns4_header{
+        font-size: 14px;
+        color: #3C4350;
+        line-height: 20px;
+        flex: 1;
+        flex-direction: column;
+        a{
+            flex: 1;
+            color: #ED5564;
+        }
+      }
+      .columns4_body{
+        flex: 1;
+        font-size: 14px;
+        line-height: 20px;
+        a{
+            color: #ED5564;
+        }
+      }
+    }
+
+    .trips_table_item_footer{
+      width: 100%;
+      height: 48px;
+      line-height: 48px;
+      background: #F4F4F4;
+      overflow: hidden;
+      .order_list_columns1{
+        padding: 0;
+        .columns_label{
+          width: 120px;
+          margin-right: 12px;
+        }
+        .columns_num{
+          flex: 1;
+          span{
+
+font-size: 14px;
+color: #06BEBD;
+
+line-height: 14px;
+          }
+        }
+      }
+      .order_list_columns2,.order_list_columns3,.order_list_columns4{
+        border: 0;
+        padding: 12px;
+        flex-direction: row;
+        .columns_label{
+          width:60px;
+          // padding-top: 10px;
+          font-size: 14px;
+          color: #848484;
+          line-height: 14px;
+          // margin-right: 12px;
+        }
+        .columns_num{
+          flex: 1;
+          font-size: 24px;
+          color: #ED5564;
+          line-height: 24px;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+.guest_modal{
+  width: 80% !important;
+  max-width: 1000px;
+}
+.change_modal{
+  .qrcode_img_wrapper{
+    max-width: 300px;
+    margin:  0 auto;
+    img{
+      width: 100%;
+    }
+  }
+}
+@media (max-width: $screen-mobile) {
+  .booking_wrap{
+    .list_title{
+      font-size: 24px;
+      padding: 12px 0 24px 0;
+    }
+    .ant-tabs {
+      border: 0;
+      border-top: 1px solid #C5C6C7;
+      border-radius: 4px;
+    }
+    .messages_empty{
+      width: 100%;
+      p{
+        font-size: 13px;
+        line-height: 1.5;
+      }
+      h3{
+        font-size: 22px;
+      }
+    }
+    .ant-tabs .ant-tabs-content .ant-tabs-tabpane{
+      padding: 0 12px;
+    }
+    .trips_table{
+      .trips_table_thead{
+        display: none;
+      }
+      .trips_table_item_body{
+        flex-direction: column;
+        .order_list_columns1,.order_list_columns2,.order_list_columns3,.order_list_columns4{
+          width: 100%;
+          padding: 12px 0;
+          border:0;
+          .order_banner{
+            height: 80px;
+            width: 80px;
+          }
+          .order_title_wrap{
+            .order_title{
+              font-size: 14px;
+            }
+          }
+        }
+        .order_list_columns4{
+          flex-direction:row
+        }
+      }
+
+      .trips_table_item_footer{
+         .order_list_columns1 {
+           font-size: 13px;
+           .columns_label{
+             display: none;
+           }
+         }
+         .order_list_columns2,.order_list_columns3{
+           display: none
+         }
+      }
+    }
+  }
+}

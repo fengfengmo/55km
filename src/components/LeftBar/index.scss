@@ -1,0 +1,253 @@
+@import "../../scss/_variable";
+.leftbar{
+    min-width: 240px;
+    width: 240px;
+    background: #fafafa;
+    .step_bar{
+      h1{
+        text-align: center;
+        margin: 56px 0 32px;
+        span{
+          font-size: 40px;
+          color: #3C4350;
+          letter-spacing: 0;
+          line-height: 40px;
+        }
+      }
+      ul{
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        li.leftbar_item{
+          a{
+            width: 100%;
+            text-decoration: none;
+            .num{
+              width: 40px;
+              height: 48px;
+              line-height: 48px;
+              text-align: center;
+              font-size: 24px;
+              box-sizing: border-box;
+               border-bottom: 1px solid #ededed;
+              // font-weight: 500;
+
+              color: #9b9b9b;
+            }
+            .sign{
+              border-bottom: 1px solid #ededed;
+            }
+            .title{
+              height: 48px;
+              border-bottom: 1px solid #ededed;
+              box-sizing: border-box;
+              -webkit-flex-grow: 1;
+              -ms-flex-positive: 1;
+              flex-grow: 1;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-align-items: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+              justify-content: space-between;
+              span{
+                color: #848484;
+                margin-left: 28px;
+                font-size: 20px;
+                line-height: 20px;
+              }
+            }
+            .success{
+              color: #25CB83;
+              font-size: 20px;
+              padding-top: 14px;
+              padding-right: 12px;
+            }
+            .warn{
+              color: #E9E165;
+              font-size: 20px;
+              padding-top: 14px;
+              padding-right: 12px;
+            }
+          }
+          .active{
+            background-color: #fff;
+            .num{
+              color: #fff;
+              background: #06BEBD;
+            }
+            .warn{
+              color: #fff;
+            }
+          }
+          &:first-child{
+            border-top: 1px solid #ededed;
+          }
+        }
+      }
+    }
+    // 用户中心bar
+    .user_left_bar{
+      margin:0 10px;
+      // min-height: 900px;
+      .left_bar_top{
+        height: 292px;
+        // margin:0 10px;
+        padding-top: 40px;
+        border-bottom: 1px solid #EDEDED;
+        .avatar_big{
+          width: 120px;
+          height: 120px;
+          border-radius: 100%;
+          margin: 0 auto;
+          background-image: url(/static/images/usericon_120.png);
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          background-size: cover;
+        }
+        h1{
+          text-align: center;
+          font-size: 24px;
+          color: #3C4350;
+          letter-spacing: 0;
+          line-height: 24px;
+          margin-top: 17px;
+          margin-bottom: 12px;
+        }
+        .user_rate{
+          margin: 0 auto;
+          text-align: center;
+          .ant-rate-star-half .ant-rate-star-content:before, .ant-rate-star-full:before{
+            color: #E9E165;
+          }
+        }
+        .user_rate_reviews{
+          font-size: 16px;
+          padding-top: 12px;
+          color: #848484;
+          line-height: 16px;
+          text-align: center;
+          span{
+            color: #ED5564;
+          }
+          a{
+            color: #848484;
+            span{
+              color: #848484;
+            }
+          }
+        }
+      }
+
+      .left_bar_center{
+        padding: 36px 0px;
+        border-bottom: 1px solid #EDEDED;
+        .profile_edit_bnt{
+          display: flex;
+          justify-content: center;
+          a{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-size: 16px;
+            color: #3C4350;
+            i{
+              font-size: 40px;
+              margin-bottom: 18px;
+            }
+          }
+        }
+        .bnt{
+          width: 100%;
+          background: #06BEBD;
+          font-size: 18px;
+          border-color: #06BEBD;
+          color: #FFFFFF;
+          letter-spacing: 0;
+          line-height: 24px;
+        }
+      }
+
+      .left_bar_bottom{
+        max-width: 240px;
+        padding-top: 40px;
+        padding-bottom: 60px;
+        .left_bar_tips{
+          i{
+            font-size: 24px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('/static/images/tips_24.png');
+            height: 24px;
+            width: 24px;
+            display: inline-block;
+            margin-right: 12px;
+          }
+        }
+        .title{
+          text-align: center;
+          font-size: 24px;
+          color: #9B9B9B;
+          letter-spacing: 0;
+          line-height: 24px;
+          margin-bottom: 24px;
+        }
+        p{
+          width: 100%;
+          padding: 0 5px;
+          font-size: 14px;
+          color: #9B9B9B;
+          line-height: 20px;
+          // font-weight: 100;
+        }
+      }
+    }
+}
+
+@media (max-width: $screen-mobile) {
+  .leftbar{
+    width:100%;
+    max-width: 100%;
+    .user_left_bar{
+      position: relative;
+      .left_bar_top{
+        padding-top: 32px;
+      }
+      .left_bar_center{
+        position: absolute;
+        width: 100%;
+        top: 32px;
+        left: 0;
+        right: 0;
+        padding: 0;
+        border: 0;
+        .profile_edit_bnt{
+          justify-content: space-around;
+          a{
+            text-align: center;
+            font-size: 14px;
+            padding-right: 25%;
+            &:last-child{
+              padding-right: 0;
+              padding-left: 25%;
+            }
+            i{
+              font-size: 24px;
+              margin-bottom: 9px;
+            }
+          }
+        }
+
+      }
+      .left_bar_bottom{
+        display: none
+      }
+    }
+  }
+}

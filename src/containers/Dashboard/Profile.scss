@@ -1,0 +1,195 @@
+@import "../../scss/_variable";
+/**
+ * 个人资料编辑
+ */
+.profile_wrap{
+  .ant-select-selection__rendered{
+    line-height: 44px;
+  }
+  .ant-select-lg .ant-select-selection--multiple .ant-select-selection__rendered li{
+    height: 32px;
+    line-height: 32px;
+    margin-top: 6px;
+  }
+  .avatar_big {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background-image: url(/static/images/usericon_120.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 24px;
+  }
+  .upload_avatar{
+    min-width: 120px;
+  }
+  .ant-form-item-label{
+    text-align: left;
+  }
+  .ant-form-item-label label:after{
+    content: " ";
+  }
+  .ant-form-item-required:before{
+    display: none;
+  }
+  .ant-form-item-label .ant-form-item-required:after{
+      display: inline-block;
+      margin-right: 4px;
+      content: "*";
+      font-family: SimSun;
+      line-height: 1;
+      font-size: 16px;
+      color: #f50;
+  }
+  .profile_item_two{
+    .ant-input{
+      // width: 45%;
+      height: 44px;
+      line-height: 44px;
+    }
+    label{
+      &:after {
+          display: inline-block;
+          margin-right: 4px;
+          content: "*";
+          font-family: SimSun;
+          line-height: 1;
+          font-size: 16px;
+          color: #f50;
+      }
+    }
+  }
+  .profile_item_three{
+    .ant-input{
+      width: 30%;
+      height: 44px;
+      line-height: 44px;
+      &:nth-child(1){
+        margin-right: 3%;
+      }
+      &:nth-child(2){
+        margin-left: 2%;
+        margin-right: 2%;
+      }
+      &:nth-child(3){
+        margin-right: 3%;
+      }
+    }
+  }
+  .ant-calendar-picker{
+    width: 100%;
+  }
+  .profile_item_flex{
+    .ant-radio-group{
+      display: flex;
+      .ant-radio-wrapper{
+        flex: 1;
+        .ant-radio{
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+  .save_bnt{
+    text-align: right;
+    .save{
+      width: 140px;
+      height: 44px;
+    }
+  }
+
+  .form_item_upload{
+    .form_item_tips{
+
+      span{
+        font-size: 12px;
+        color: #ED5564;
+
+        span{
+          display: block;
+          color: #9b9b9b;
+        }
+      }
+    }
+    .ant-upload-list.ant-upload-list-text{
+      display: none;
+    }
+    .ant-upload-list-picture-card{
+      .ant-upload-list-item{
+        max-width: 220px;
+        width: 33.33%;
+        height: 220px;
+        margin: 0 0 16px;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+        display: block;
+        float: left;
+        .ant-upload-list-item-info{
+          height: 160px;
+          .ant-upload-list-item-thumbnail{
+            height: 160px;
+          }
+        }
+        .ant-upload-list-item-name{
+          display: block;
+          margin: 16px 0 0;
+          padding: 0;
+        }
+        &:nth-child(3n+1){
+          padding-right: 10px;
+        }
+        &:nth-child(3n+2){
+          padding: 0 5px;
+        }
+        &:nth-child(3n+3){
+          padding-left: 10px
+        }
+      }
+      .ant-upload-list-item-info{
+        border-radius: 4px;
+      }
+    }
+
+    .qiniu_upload{
+      border: 1px dashed #C5C6C7;
+      border-radius: 4px;
+      background-color: #fbfbfb;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+      display: inline-block;
+      padding-top: 24px;
+      vertical-align: top;
+      width: 100%;
+      height: 145px;
+      color: #ED5564;
+      &:hover{
+        border-color: #38cbca;
+      }
+      i{
+        font-size: 40px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+@media (max-width: $screen-mobile) {
+  .profile_wrap{
+    .leftbar{
+      display: none;
+    }
+    .dashboard_right{
+      padding: 12px;
+      width: 100%;
+      .list_title{
+        font-size: 24px;
+        margin:12px 0 24px 0;
+      }
+      .form_item_upload .ant-upload-list-picture-card .ant-upload-list-item .ant-upload-list-item-info .ant-upload-list-item-thumbnail{
+        max-height: 120px;
+      }
+    }
+  }
+}

@@ -1,0 +1,581 @@
+@import "../../scss/_variable";
+/**
+ * webapi_1485344686_kvfpa_q4kmb
+ */
+.index_wrap{
+  .index_bg{
+    background-color: #bbb;
+    background-image: url(http://7xq8kr.com1.z0.glb.clouddn.com/webapi_1486838939_s2fuf_j3pmh);
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    min-height: 570px;
+    color: #fff;
+    z-index: 999;
+    position: relative;
+    height: 570px;
+    margin-top: -88px;
+    header{
+      padding-top: 26px;
+      position: inherit;
+      top: 0;
+      height: 72px;
+      background: transparent;
+      color: #fff;
+      width: 100%;
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      .header_box{
+        padding:0;
+        ul{
+          margin: 0;
+        }
+        .bnt_log_in{
+          .ant-btn{
+            background: rgba(255,255,255,0.20);
+          }
+        }
+        .bnt_sign_up{
+          .ant-btn{
+            border: 0;
+            background:rgba(255,255,255,0);
+          }
+        }
+      }
+      .logo{
+        i{
+          color: #fff
+        }
+      }
+    }
+    .index_header_main{
+      text-align: center;
+      margin: 160px auto 0;
+      color: #FFFFFF;
+      h1{
+        font-size: 56px;
+        line-height: 64px;
+      }
+      h2{
+        font-size: 77px;
+        line-height: 78px;
+      }
+      h3{
+        font-size: 20px;
+        line-height: 20px;
+      }
+      .index_search{
+        padding-top: 32px;
+        margin: 0 auto;
+        max-width: 600px;
+        .ant-select-lg{
+          width: 100%;
+          .ant-select-selection__rendered{
+            line-height: 44px;
+          }
+        }
+        i,.ant-select-arrow{
+          transform:scale(1);
+          border: 0;
+          display: inline-block;
+          height:100%;
+          width: 20%;
+          right: -1px;
+          top: -1px;
+          margin: 0;
+          font-size: 16px;
+          line-height: 44px;
+          height: 44px;
+          max-width: 120px;
+          background: #06BEBD;
+          border-radius: 0 4px 4px 0;
+          color: #fff;
+          &:before{
+            content: "\E670";
+          }
+        }
+      }
+    }
+  }
+  .index_main{
+    margin-top: 60px;
+    .popular_city_wrap{
+      .popular_city_heard{
+        text-align: center;
+        h2{
+          span{
+            font-size: 36px;
+            line-height: 36px;
+            color: #3C4350;
+          }
+
+        }
+        span{
+          display: block;
+          font-size: 16px;
+          color: #848484
+        }
+      }
+      .popular_city_body{
+        padding-top: 32px;
+        li{
+          float: left;
+          width: 50%;
+          height: 300px;
+          padding-right: 12px;
+          padding-bottom: 24px;
+          text-align: center;
+          a{
+            position: relative;
+            background: transparent;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            display: block;
+            transition:all ease .2s;
+            img{
+              position: absolute;
+              object-fit: cover;
+              font-family: "object-fit: cover;";
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+              z-index: -1;
+            }
+          }
+          span{
+            position: absolute;
+            font-size: 48px;
+            color: #FFFFFF;
+            line-height: 48px;
+            width: 100%;
+            bottom: 24px;
+            left: 0;
+            right: 0;
+            transition:all ease .2s;
+          }
+          a:hover{
+            background-color: rgba(255,255,255,.2);
+            span{
+              bottom: 50%;
+              margin-bottom: -24px;
+            }
+          }
+          &:nth-child(2n) {
+            padding-right: 0;
+            padding-left: 12px;
+          }
+        }
+      }
+    }
+
+    .experience_wrap{
+      padding-top: 60px;
+      .experience_heard{
+        text-align: center;
+        h2{
+          font-size: 36px;
+          line-height: 36px;
+          color: #3C4350;
+        }
+      }
+      .experience_body{
+        text-align: center;
+        padding-top: 32px;
+        li{
+          float: left;
+          width: 30%;
+          height: 300px;
+          padding-bottom: 24px;
+          text-align: center;
+          &:nth-child(2n) {
+            margin: 0 5%;
+          }
+          h3{
+            font-size: 24px;
+            line-height:44px;
+          }
+          p{
+            text-indent: 0;
+            padding-left: 1em;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    &.index_main2{
+      padding-top: 20px;
+    }
+    .index_banner{
+      position: relative;
+      background-color: #ddd;
+      width: 100%;
+      height: 300px;
+      color: #fff;
+      display: block;
+      img{
+        position: absolute;
+        object-fit: cover;
+        font-family: "object-fit: cover;";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      button{
+        position: absolute;
+        bottom: 24px;
+        right: 40px;
+        min-width: 120px;
+        color: #fff;
+      }
+      &.index_banner1,&.index_banner2{
+        h3{
+          position: absolute;
+          top: 40px;
+          left: 40px;
+          z-index: 1;
+          width: 288px;
+          font-size: 48px;
+          color: #4191AF;
+          line-height: 48px;
+        }
+        p{
+          position: absolute;
+          top: 160px;
+          left: 40px;
+          z-index: 1;
+          width: 380px;
+          font-size: 24px;
+          color: #FFFFFF;
+          line-height: 24px;
+        }
+
+      }
+      &.index_banner1{
+        h3{
+          width: 100%;
+        }
+      }
+      &.index_banner2{
+        h3{
+          color: #ED5564;
+        }
+        p{
+          top:95px;
+          color: #4A4A4A;
+        }
+      }
+    }
+    /**
+     * 微信部分
+     */
+    .wechat_wrap{
+      text-align: center;
+      margin: 60px auto;
+      .wechat_wrap_header{
+          font-size: 36px;
+          color: #3C4350;
+          line-height: 36px;
+      }
+      .wechat_wrap_body{
+        position: relative;
+        width: 240px;
+        height: 240px;
+        margin: 0px auto;
+        img{
+          position: absolute;
+          object-fit: cover;
+          font-family: "object-fit: cover;";
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+
+  }
+
+  /**
+   * 评论 webapi_1485860906_7u6jc_z78j3
+   */
+  .index_main_reviews{
+    background-image: url('http://7xq8kr.com1.z0.glb.clouddn.com/webapi_1486838949_0630o_fapi8');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 290px;
+    height: 920px;
+    width: 100%;
+    .reviews_logo{
+      margin: 0 auto;
+      text-align: center;
+
+      i{
+        font-size: 163px;
+        color: #fff;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 138px;
+        width: 400px;
+        &:before{
+          content: '';
+        }
+      }
+      .anticon-logo_zh{
+        background-image: url('http://7xq8kr.com1.z0.glb.clouddn.com/webapi_1486376577_rly28_s6nmv');
+      }
+      .anticon-logo_en{
+        background-image: url('http://7xq8kr.com1.z0.glb.clouddn.com/webapi_1486380960_hhx6e_ktvsj');
+      }
+    }
+    .reviews_title{
+      text-align: center;
+      color: #fff;
+      h3{
+        font-size: 22.5px;
+        letter-spacing: 7px;
+      }
+      h1{
+        font-size: 90px;
+        letter-spacing: 7.5px;
+      }
+    }
+    .reviews_wrap{
+      width: 100%;
+
+      .slick-slider{
+
+        .slick-list{
+          overflow: hidden;
+        }
+        i{
+          font-size: 16px;
+          color: #fff;
+        }
+      }
+      .reviews_item{
+        flex:1;
+        h3{
+          color: #fff;
+          font-size: 20px;
+        }
+        p{
+          color: #c5c6c7;
+          font-size: 16px;
+          padding-right: 20px;
+        }
+        .reviews_item_con_bottom{
+          .ant-rate{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-mobile) {
+  .index_wrap {
+    .index_bg {
+      margin-top: -48px;
+      height: 460px;
+      min-height: 460px;
+      background-image: url(http://7xq8kr.com1.z0.glb.clouddn.com/webapi_1486904193_sqi6o_3t6rt);
+      header{
+        padding-top: 8px;
+        height: 48px;
+      }
+      .index_header_main{
+        margin-top: 130px;
+        h1{
+          font-size: 44px;
+        }
+        h2{
+          font-size: 62px;
+        }
+        h3{
+          font-size: 16px;
+        }
+        .index_search{
+          max-width: 300px;
+          .ant-select-selection__placeholder{
+            text-indent: -60px;
+          }
+        }
+      }
+    }
+
+    .index_main{
+      margin-top: 35px;
+      .popular_city_wrap{
+        .popular_city_heard{
+          h2{
+            span{
+              font-size: 24px;
+              line-height: 24px;
+            }
+          }
+          span{
+            font-size: 14px;
+          }
+        }
+        .popular_city_body{
+          padding-top: 32px;
+          li{
+            width: 100%;
+            padding: 6px 24px;
+            height: 210px;
+            &:nth-child(2n) {
+              padding: 6px 24px;
+            }
+            span{
+              height: 40px;
+              bottom:50%;
+              font-size: 36px;
+              line-height: 36px;
+              margin-bottom: -20px;
+            }
+
+          }
+        }
+      }
+
+      .experience_wrap{
+        padding-top: 24px;
+        .experience_heard{
+          text-align: center;
+          h2{
+            font-size: 24px;
+            line-height: 24px;
+          }
+        }
+        .experience_body{
+          text-align: center;
+          padding-top: 32px;
+          li{
+            float: left;
+            width: 100%;
+            height: 135px;
+            padding: 0 24px;
+            margin-bottom: 12px;
+            display: flex;
+            text-align: center;
+            &:nth-child(2n) {
+              padding: 0 24px;
+              margin:0 0 12px;
+            }
+            img{
+              height: 135px;
+              width: 120px;
+            }
+            div{
+              text-align: left;
+              text-indent: 1em;
+              flex: 1;
+            }
+            h3{
+              font-size: 16px;
+              line-height:44px;
+            }
+            p{
+              text-indent: 0;
+              padding-left: 1em;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      .wechat_wrap{
+        .wechat_wrap_header{
+          font-size: 24px;
+        }
+      }
+    }
+    .index_main_reviews{
+      height: 660px;
+      padding-top: 200px;
+      .reviews_logo{
+        i{
+          font-size: 70px;
+          background-size: 60%;
+        }
+      }
+      .reviews_title{
+        h3{
+          font-size: 13px;
+        }
+        h1{
+          font-size: 37px;
+        }
+      }
+      .reviews_wrap{
+        display: block;
+        width: 85%;
+        margin: 0 auto;
+        .reviews_item{
+          p{
+            padding: 0;
+            font-size: 13px;
+            line-height: 22px;
+          }
+          .reviews_item_con_bottom{
+            li{
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .index_main2{
+    .index_banner{
+        &.index_banner1,&.index_banner2{
+          text-align: center;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          img{
+            display: none;
+          }
+          h3{
+            left: 50%;
+            margin-left: -150px;
+            font-size: 36px;
+            width: 300px;
+          }
+          p{
+            left: 50%;
+            margin-left: -175px;
+            font-size: 16px;
+          }
+
+        }
+        &.index_banner1{
+          background-image: url('http://7xq8kr.com1.z0.glb.clouddn.com/webapi_1488528290_l7ao1_k1voa');
+          h3{
+            top:57px;
+          }
+          p{
+            top:30px;
+          }
+        }
+        &.index_banner2{
+          background-image: url('http://7xq8kr.com1.z0.glb.clouddn.com/webapi_1486904243_kt0lb_57h9h');
+          h3{
+            top:90px;
+          }
+          p{
+            top:135px;
+            color: #fff;
+          }
+        }
+    }
+    }
+  }
+}
+
+.logout_wrap{
+  min-height: 500px;
+}

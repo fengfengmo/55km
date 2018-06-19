@@ -1,0 +1,105 @@
+@import "../../scss/_variable";
+@import "../../scss/_reset";
+.flex{
+   display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.max_width{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+.max_width960{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.container{
+  box-sizing: border-box;
+  padding-top: 88px;
+  // font-weight: 400;
+}
+/**
+ * 登录modal
+ */
+.login_modal{
+  .ant-modal-body{
+    padding: 32px;
+  }
+  .ant-modal-close{
+    right: 12px;
+    top: 12px;
+  }
+  .login_form_wrap{
+    .login_form_wrap_header{
+      text-align: center;
+      font-size: 32px;
+      color: #3C4350;
+      line-height: 32px;
+      padding-bottom: 20px;
+    }
+    .ant-select-selection__rendered{
+      line-height: 44px;
+    }
+    .login_flex{
+      justify-content: space-between;
+    }
+    .login_form_wrap_footer{
+      border-top: 1px solid #EEEEEE;
+      line-height: 44px;
+      text-align: center;
+      a{
+        color: #ED5564;
+      }
+    }
+    .login_form_header{
+      text-align: center;
+    }
+    .ant-form-item-control {
+      .ant-col-11{
+        height: 44px;
+      }
+    }
+  }
+  .login_form_forgot {
+    float: right;
+  }
+  .login_form_button {
+    width: 100%;
+  }
+}
+@media (max-width: $screen-mobile) {
+  .container{
+    padding-top: 48px;
+    overflow: hidden;
+  }
+  .ant-notification{
+    top: 48px !important;
+    width: 100%;
+    margin-right:0;
+    .ant-notification-notice-close-x:after{
+      font-size: 24px;
+    }
+  }
+  .login_modal{
+
+    .login_form_wrap{
+
+      .ant-form-item{
+        font: 13px;
+        margin-bottom: 12px;
+      }
+      .login_form_wrap_header{
+        font-size: 20px;
+      }
+    }
+
+    .ant-modal-body{
+      padding: 12px;
+    }
+
+  }
+}
