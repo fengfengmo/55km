@@ -288,7 +288,7 @@ class Home extends React.Component {
             <div className="reviews_logo"><Icon type={"logo_"+locale} /></div>
             <div className="reviews_title">
               <h3>LET YOUR LIFE BE AN</h3>
-              <h1>ADVENTURE</h1>
+              <h1>ADVENTURE！</h1>
             </div>
             <div className="reviews_wrap" >
               <Carousel {...settings}>
